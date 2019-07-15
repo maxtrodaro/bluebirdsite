@@ -24,6 +24,14 @@
     margin-bottom: 10px;
 }
 
+.header-left-cart{
+    padding-right: 30px;
+}
+
+.header-left-sign{
+    margin-top: 3px;
+}
+
 .header-cart{
     float: right;
 }
@@ -36,6 +44,12 @@
 
 .header-cart p{
     display: inline-block;
+}
+
+.header-cart p:after {
+    content:url('../imagens/cart.png');
+    position: relative;
+    padding: 10px;
 }
 
 .menu{
@@ -100,7 +114,6 @@
 
 .img-banner{
     width: 100%;
-    margin-bottom: 40px; 
 }
 
 .img-banner-footer{
@@ -342,4 +355,49 @@ section .description-style p{
 
 .line{
     opacity: 0.2;
+}
+
+@media screen and (max-device-width: 360px) {
+    .iframegeral {
+    height: 394px
+    }
+}
+
+@media screen and (max-device-width: 500px) {
+    .cover_iframe{
+      height: 325px;
+      width: 100%;
+      position: absolute;
+      margin-top: -25px;
+    }
+}
+
+.text-carousel{
+    color: #696969;
+    font-family: "Helvética", sans-serif;
+    line-height: 34px;
+    text-align: center;
+}
+
+.title-carousel{
+    font-size: 32px;
+    margin-top: 45px;
+    margin-bottom: 10px;
+    font-weight: bolder;
+}
+
+.subtitle{
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+
+.carousel-line{
+    margin-left: 50px;
+    margin-bottom: 100px;
+}
+
+.btn-carousel{
+    margin-top: 70px !important;
+    width: 25px !important;
+    height: 30px !important;
 }
