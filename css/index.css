@@ -1,7 +1,4 @@
 .header{
-    width: 100%;
-    text-align: center;
-    box-sizing: border-box;
     font-family: "Helvética", sans-serif;
     color: #696969;
     padding-left: 1%;
@@ -12,6 +9,7 @@
 .header-location{
     float: left;
     height: 14px;
+    margin-right: 10px;
 }
 
 .header-higher{
@@ -42,10 +40,6 @@
     margin: auto;
 }
 
-.header-cart p{
-    display: inline-block;
-}
-
 .header-cart p:after {
     content:url('../imagens/cart.png');
     position: relative;
@@ -53,14 +47,12 @@
 }
 
 .menu{
-    height: auto;
     text-align: center;
     clear: both;
     margin-left: 8%;
 }
 
 .menu ul li{
-    list-style: none;
     display: inline-block;
     vertical-align: middle;
     margin-left: 10px;
@@ -116,46 +108,57 @@
     width: 100%;
 }
 
-.img-banner-footer{
-    width: 100%;
-    margin-bottom: 90px;
-    background-attachment: inherit;
-    background-size: 100%;
-    background-position: left;
-    clear: both;
-    height: 500px;
-    background-image: url("./../imagens/banner2.jpg");
-    padding: 200px;
-    box-sizing: border-box;
+@media screen and (max-device-width: 360px) {
+    .iframegeral {
+        height: 394px
+    }
 }
 
-.p-instagram{
-    text-transform: uppercase;
-    color: white;
-    font-size: 32px;
-    font-weight: bolder;
+@media screen and (max-device-width: 500px) {
+    .cover_iframe{
+        height: 325px;
+        width: 100%;
+        position: absolute;
+        margin-top: -25px;
+    }
+}
+
+.text-carousel{
+    color: #696969;
     font-family: "Helvética", sans-serif;
+    line-height: 34px;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
 }
 
-.btn-banner-footer{
-    display: flex;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
+.title-carousel{
+    font-size: 32px;
+    margin-top: 45px;
+    margin-bottom: 10px;
+    font-weight: bolder;
 }
 
-.container {
-    width: 100%;
-    margin: auto;
+.subtitle{
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+
+.carousel-line{
+    margin-left: 25px;
+    margin-bottom: 100px;
+}
+
+.btn-carousel{
+    margin-top: 10px !important;
+    width: 25px !important;
+    height: 30px !important;
+}
+
+.carousel-style img{
+    width: 250px;
+    height: 250px;
 }
 
 .line-content{
-    width: 100%;
-    height: 300px;
     margin-top: 30px;
     clear: both;
 }
@@ -234,12 +237,40 @@ section .description-style p{
     background-color: #273578;
 }
 
+.img-banner-footer{
+    margin-bottom: 90px;
+    background-size: 100%;
+    background-position: left;
+    clear: both;
+    height: 500px;
+    background-image: url("./../imagens/banner2.jpg");
+    padding: 200px;
+    box-sizing: border-box;
+}
+
+.p-instagram{
+    text-transform: uppercase;
+    color: white;
+    font-size: 32px;
+    font-weight: bolder;
+    font-family: "Helvética", sans-serif;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-banner-footer{
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
 .base-footer-higher{
-    width: 100%;
     font-family: "Helvetica", sans-serif;
     font-size: 12px;
     padding: 10px;
-    box-sizing: border-box;
     color: #696969;
     display: flex;
     margin-top: 35px;
@@ -250,7 +281,6 @@ section .description-style p{
 .footer-higher{
     width: 25%;
     height: 170px;
-    box-sizing: border-box;
 }
 
 .footer-higher h3{
@@ -269,14 +299,20 @@ section .description-style p{
 
 .footer-contact img{
     height: 24px;
-    width: 24px;
+}
+
+#title-newsletter{
+    width: 60.5%;
+    height: 28px;
+    font-size: 11px;
+    text-align: justify;
+    margin-bottom: 0.3rem;
 }
 
 .inpt-nome{
     width: 98%;
     margin-top: 5px;
     margin-bottom: 5px;
-    height: 30px;
     border: none;
     background-color: #F5F5F5;
     padding: 7px;
@@ -286,7 +322,6 @@ section .description-style p{
 
 .inpt-email{
     width: 79%;
-    height: 30px;
     border: none;
     padding: 7px;
     box-sizing: border-box;
@@ -308,7 +343,6 @@ section .description-style p{
 }
 
 .copyright{
-    width: 100%;
     font-size: 12px;
     text-align: center;
     margin-top: 40px;
@@ -320,9 +354,7 @@ section .description-style p{
     width: 100%;
     color: white;
     background-color: #273578;
-    display: inline-block;
     text-align: center;
-    list-style:none;
     padding: 10px;
     box-sizing: border-box;
     text-transform: uppercase;
@@ -345,64 +377,6 @@ section .description-style p{
     margin-right: 5%;
 }
 
-#title-newsletter{
-    width: 60.5%;
-    height: 28px;
-    font-size: 11px;
-    text-align: justify;
-    margin-bottom: 0.3rem;
-}
-
 .line{
     opacity: 0.2;
-}
-
-@media screen and (max-device-width: 360px) {
-    .iframegeral {
-    height: 394px
-    }
-}
-
-@media screen and (max-device-width: 500px) {
-    .cover_iframe{
-      height: 325px;
-      width: 100%;
-      position: absolute;
-      margin-top: -25px;
-    }
-}
-
-.text-carousel{
-    color: #696969;
-    font-family: "Helvética", sans-serif;
-    line-height: 34px;
-    text-align: center;
-}
-
-.title-carousel{
-    font-size: 32px;
-    margin-top: 45px;
-    margin-bottom: 10px;
-    font-weight: bolder;
-}
-
-.subtitle{
-    font-size: 14px;
-    margin-bottom: 40px;
-}
-
-.carousel-line{
-    margin-left: 25px;
-    margin-bottom: 100px;
-}
-
-.btn-carousel{
-    margin-top: 10px !important;
-    width: 25px !important;
-    height: 30px !important;
-}
-
-.carousel-style img{
-    width: 250px;
-    height: 250px;
 }
