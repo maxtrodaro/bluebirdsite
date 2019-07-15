@@ -4,8 +4,8 @@
     box-sizing: border-box;
     font-family: "Helvética", sans-serif;
     color: #696969;
-    padding-left: 3%;
-    padding-right: 3%;
+    padding-left: 1%;
+    padding-right: 1%;
     margin-top: 12px;
 }
 
@@ -392,7 +392,7 @@ section .description-style p{
 }
 
 .carousel-line{
-    margin-left: 50px;
+    margin-left: 25px;
     margin-bottom: 100px;
 }
 
@@ -400,4 +400,9 @@ section .description-style p{
     margin-top: 10px !important;
     width: 25px !important;
     height: 30px !important;
+}
+
+.carousel-style img{
+    width: 250px;
+    height: 250px;
 }
