@@ -4,12 +4,11 @@
         <title>Eduardo Godoy</title>
         <link rel="stylesheet" type="text/css" href="../css/reset.css">
         <link rel="stylesheet" type="text/css" href="../css/index.css">
-        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <header class="header">
-            <section>
-                <img class="header-location" src="../imagens/localizacao.png" alt="location"/>
+            <section class="header-location">
                 <p class="header-higher">Nossas lojas</p>
             </section>
             <section class="header-cart">
@@ -45,32 +44,80 @@
                             <h3 class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit seddo</h3>
                         </div>
                     </div>
-                    <div class="swiper-wrapper carousel-line" style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
-                        <div class="swiper-slide swiper-slide-active carousel-style">
-                          <img src="../imagens/carrossel-01.jpg">
-                        </div>
-                        <div class="swiper-slide swiper-slide-next carousel-style">
-                            <img src="../imagens/carrossel-02.jpg">
+                    <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
+                            <div class="swiper-slide swiper-slide-active carousel-line" style="width: 270px; margin-right: 30px;">
+                                <article>
+                                    <center>
+                                    <img class="carousel-image" src="../imagens/carrossel-01.jpg">
+                                    <p class="carousel-style carousel-title">Sapato Preto</p>
+                                    <p class="carousel-style carousel-subtitle">R$300,00</p>
+                                    </center>
+                                </article>
+                            </div>
+                            <div class="swiper-slide swiper-slide-next carousel-line" style="width: 270px; margin-right: 30px;">
+                               <article>
+                                    <center>
+                                    <img class="carousel-image" src="../imagens/carrossel-02.jpg">
+                                    <p class="carousel-style carousel-title">Sapatinho Exército</p>
+                                    <p class="carousel-style carousel-subtitle">R$290,00</p>
+                                    </center>
+                                </article>
+                           </div>
+                           <div class="swiper-slide carousel-line" style="width: 200px; height: 200px">
+                               <article>
+                                    <center>
+                                    <img class="carousel-image" src="../imagens/carrossel-03.jpg">
+                                    <p class="carousel-style carousel-title">Sapatinho Preto</p>
+                                    <p class="carousel-style carousel-subtitle">R$280,00</p>
+                                    </center>
+                              </article>
+                           </div>
+                           <div class="swiper-slide carousel-line" style="width: 270px; margin-right: 30px;">
+                               <article>
+                                    <center>
+                                    <img class="carousel-image" src="../imagens/carrossel-04.jpg">
+                                    <p class="carousel-style carousel-title">Sapato Macaquinho</p>
+                                    <p class="carousel-style carousel-subtitle">R$270,00</p>
+                                    </center>
+                              </article>
+                            </div>
+                            <div class="swiper-slide carousel-line" style="width: 270px; margin-right: 30px;">
+                                <article>
+                                    <center>
+                                    <img class="carousel-image" src="../imagens/carrossel-05.jpg">
+                                    <p class="carousel-style carousel-title">Sapato Florzinha</p>
+                                    <p class="carousel-style carousel-subtitle">R$260,00</p>
+                                    </center>
+                                </article>
+                            </div>
+                            <div class="swiper-slide carousel-line" style="width: 270px; margin-right: 30px;">
+                                <article>
+                                    <center>
+                                    <img class="carousel-image" src="../imagens/carrossel-06.jpg">
+                                    <p class="carousel-style carousel-title">Botinha Preta</p>
+                                    <p class="carousel-style carousel-subtitle">R$250,00</p>
+                                    </center>
+                                </article>
+                            </div>
+                            <div class="swiper-slide carousel-line" style="width: 270px; margin-right: 30px;">
+                                <article>
+                                    <center>
+                                    <img class="carousel-image" src="../imagens/carrossel-07.jpg">
+                                    <p class="carousel-style carousel-title">Sapato Estrela</p>
+                                    <p class="carousel-style carousel-subtitle">R$240,00</p>
+                                    </center>
+                                </article>
+                            </div>
+                            <div class="swiper-slide carousel-line" style="width: 270px; margin-right: 30px;">
+                                <article>
+                                    <center>
+                                    <img class="carousel-image" src="../imagens/carrossel-08.jpg">
+                                    <p class="carousel-style carousel-title">Sandália Bege</p>
+                                    <p class="carousel-style carousel-subtitle">R$230,00</p>
+                                    </center>
+                                </article>
+                            </div>
                        </div>
-                       <div class="swiper-slide carousel-style">
-                            <img src="../imagens/carrossel-03.jpg">
-                       </div>
-                       <div class="swiper-slide carousel-style">
-                            <img src="../imagens/carrossel-04.jpg">
-                       </div>
-                       <div class="swiper-slide carousel-style">
-                            <img src="../imagens/carrossel-05.jpg">
-                        </div>
-                        <div class="swiper-slide carousel-style">
-                            <img src="../imagens/carrossel-06.jpg">
-                        </div>
-                        <div class="swiper-slide carousel-style">
-                            <img src="../imagens/carrossel-07.jpg">
-                        </div>
-                        <div class="swiper-slide carousel-style">
-                            <img src="../imagens/carrossel-08.jpg">
-                        </div>
-                    </div>
                 <div class="swiper-button-prev btn-carousel"></div>
                 <div class="swiper-button-next btn-carousel"></div>
                 </div>
@@ -81,7 +128,7 @@
         <section class="container">
             <section class="line-content">
                 <img class="photo-style photo-left" src="../imagens/foto01.png" alt="Blue Bird shoes">
-                <section class="description-style descript-left">
+                <section class="description-style descript-left description-mobile-correction">
                     <h3 class="h3-big">Blog</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempus eleifend velit, nec fringilla dolor fringilla id. Vestibulum vulputate fringilla congue. Donec vestibulum, libero ac tempor interdum, nulla est faucibus quam, at molestie felis elit sit amet magna. Duis leo eros, congue id turpis id, consectetur pellentesque eros. Nunc ac volutpat lorem.</p>
                     <button class="btn-style btn-color-green">Descubra</button>
@@ -89,7 +136,7 @@
             </section>
             <section class="line-content">
                 <img class="photo-style photo-right" src="../imagens/foto02.png" alt="Blue Bird shoes">
-                <section class="description-style descript-right">
+                <section class="description-style descript-right description-mobile-correction">
                     <h3>Lojas</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempus eleifend velit, nec fringilla dolor fringilla id. Vestibulum vulputate fringilla congue. Donec vestibulum, libero ac tempor interdum, nulla est faucibus quam, at molestie felis elit sit amet magna. Duis leo eros, congue id turpis id, consectetur pellentesque eros. Nunc ac volutpat lorem.</p>
                     <button class="btn-style btn-color-blue">Conheça</button>
@@ -97,7 +144,7 @@
             </section>
             <section class="line-content">
                 <img class="photo-style photo-left" src="../imagens/foto03.png" alt="Blue Bird shoes">
-                <section class="description-style descript-left">
+                <section class="description-style descript-left description-mobile-correction">
                     <h3 class="h3-small">Personalize</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempus eleifend velit, nec fringilla dolor fringilla id. Vestibulum vulputate fringilla congue. Donec vestibulum, libero ac tempor interdum, nulla est faucibus quam, at molestie felis elit sit amet magna. Duis leo eros, congue id turpis id, consectetur pellentesque eros. Nunc ac volutpat lorem.</p>
                     <button class="btn-style btn-color-green">Descubra</button>
@@ -105,7 +152,7 @@
             </section>
             <section class="line-content">
                 <img class="photo-style photo-right" src="../imagens/foto04.png" alt="Blue Bird shoes">
-                <section class="description-style descript-right">
+                <section class="description-style descript-right description-mobile-correction">
                     <h3>Lorem ipsum</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempus eleifend velit, nec fringilla dolor fringilla id. Vestibulum vulputate fringilla congue. Donec vestibulum, libero ac tempor interdum, nulla est faucibus quam, at molestie felis elit sit amet magna. Duis leo eros, congue id turpis id, consectetur pellentesque eros. Nunc ac volutpat lorem.</p>
                     <button class="btn-style btn-color-blue">Conheça</button>
@@ -113,7 +160,7 @@
             </section>
             <section class="line-content">
                 <img class="photo-style photo-left" src="../imagens/foto05.png" alt="Blue Bird shoes">
-                <section class="description-style descript-left">
+                <section class="description-style descript-left description-mobile-correction">
                     <h3 class="h3-big">Lorem ipsum</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempus eleifend velit, nec fringilla dolor fringilla id. Vestibulum vulputate fringilla congue. Donec vestibulum, libero ac tempor interdum, nulla est faucibus quam, at molestie felis elit sit amet magna. Duis leo eros, congue id turpis id, consectetur pellentesque eros. Nunc ac volutpat lorem.</p>
                     <button class="btn-style btn-color-green">Descubra</button>
